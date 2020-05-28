@@ -1,0 +1,121 @@
+/*add full-width input fields*/ 
+input[type=text], 
+input[type=password],input[type=email] { 
+    width: 50%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+   
+} 
+/* set a style for all buttons*/ 
+.button { 
+    background-color: #008B8B; 
+    color: white; 
+    padding: 3px 10px; 
+    margin-top: 5px;
+    cursor: pointer; 
+    width: auto; 
+ 
+} 
+/*set styles for the cancel button*/ 
+.cancelbtn { 
+    padding: 14px 20px; 
+    background-color: #FF2E00; 
+} 
+.lgbtn { 
+    padding: 14px 20px; 
+    background-color: #008B8B; 
+} 
+/*float cancel and signup buttons and add an equal width*/ 
+.cancelbtn, 
+.lgbtn { 
+    float: left; 
+    width: 25% 
+} 
+/*add padding to container elements*/ 
+.container { 
+    padding: 16px; 
+} 
+/*define the modal’s background*/ 
+
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px; 
+} 
+/*define the modal-content background*/ 
+
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888; 
+    width: 50%; 
+} 
+/*define the close button*/ 
+
+.close { 
+    position: absolute; 
+    right: 35px; 
+    top: 15px; 
+    color: #000; 
+    font-size: 40px; 
+    font-weight: bold; 
+} 
+/*define the close hover and focus effects*/ 
+
+.close:hover, 
+.close:focus { 
+    color: red; 
+    cursor: pointer; 
+} 
+
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+} 
+
+
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+@media screen and (max-width: 300px) { 
+    .cancelbtn, 
+    .signupbtn { 
+        width: 100%; 
+    } 
+} 
